@@ -1,0 +1,763 @@
+{
+	"info": {
+		"_postman_id": "ebf3dd97-39f5-4ba7-ae9f-b83976d82cef",
+		"name": "Bible.API_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32167996"
+	},
+	"item": [
+		{
+			"name": "GetBibles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"First Bible id = \" + pm.response.json().data[0].id, function () {\r",
+							"    pm.expect(pm.response.json().data[0].id).to.equal(\"472735b48a27b402-01\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAudioBibles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"First Bible id = \" + pm.response.json().data[0].id, function () {\r",
+							"    pm.expect(pm.response.json().data[0].id).to.equal(\"4be2587519bb459d-01\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/audio-bibles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"audio-bibles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Bible id = \" + pm.response.json().data.id, function () {\r",
+							"    pm.expect(pm.response.json().data.id).to.equal(\"7142879509583d59-03\");\r",
+							"});\r",
+							"pm.test(\"Bible name = \" + pm.response.json().data.name, function () {\r",
+							"    pm.expect(pm.response.json().data.name).to.equal(\"World English Bible British Edition\");\r",
+							"});\r",
+							"pm.test(\"Bible description = \" + pm.response.json().data.description, function () {\r",
+							"    pm.expect(pm.response.json().data.description).to.equal(\"Orthodox\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAudioBibleById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Audio Bible id = \" + pm.response.json().data.id, function () {\r",
+							"    pm.expect(pm.response.json().data.id).to.equal(\"26b7a1cd2f8f4878-01\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/audio-bibles/26b7a1cd2f8f4878-01?",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"audio-bibles",
+						"26b7a1cd2f8f4878-01"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchBibleById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Bible verses length = \" + pm.response.json().data.verses.length, function () {\r",
+							"    pm.expect(pm.response.json().data.verses.length).to.equal(5);\r",
+							"});\r",
+							"pm.test(\"Bible verses has Lord\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Lord\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/search?query=Lord&limit=5",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Lord"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBooks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"First Bible Book id = \" + pm.response.json().data[0].id, function () {\r",
+							"    pm.expect(pm.response.json().data[0].id).to.equal(\"GEN\");\r",
+							"});\r",
+							"pm.test(\"Bible Book length = \" + pm.response.json().data.length, function () {\r",
+							"    pm.expect(pm.response.json().data.length).to.equal(77);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBookById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Bible Book id = \" + pm.response.json().data.id, function () {\r",
+							"    pm.expect(pm.response.json().data.id).to.equal(\"LUK\");\r",
+							"});\r",
+							"pm.test(\"Bible Book nameLog = \" + pm.response.json().data.nameLong, function () {\r",
+							"    pm.expect(pm.response.json().data.nameLong).to.equal(\"The Good News According to Luke\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/books/LUK",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"books",
+						"LUK"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBookChapters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"First Bible Book Chapter id = \" + pm.response.json().data[0].id, function () {\r",
+							"    pm.expect(pm.response.json().data[0].id).to.equal(\"LUK.intro\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapters count = \" + pm.response.json().data.length, function () {\r",
+							"    pm.expect(pm.response.json().data.length).to.equal(25);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/books/LUK/chapters",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"books",
+						"LUK",
+						"chapters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBookChapterById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapter id = \" + pm.response.json().data.id, function () {\r",
+							"    pm.expect(pm.response.json().data.id).to.equal(\"LUK.12\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapter next = \" + pm.response.json().data.next.id, function () {\r",
+							"    pm.expect(pm.response.json().data.next.id).to.equal(\"LUK.13\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapter next = \" + pm.response.json().data.previous.id, function () {\r",
+							"    pm.expect(pm.response.json().data.previous.id).to.equal(\"LUK.11\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/chapters/LUK.12",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"chapters",
+						"LUK.12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBookChapterVerses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"First Bible Book Chapter Verse id = \" + pm.response.json().data[0].id, function () {\r",
+							"    pm.expect(pm.response.json().data[0].id).to.equal(\"LUK.12.1\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapters Verses count = \" + pm.response.json().data.length, function () {\r",
+							"    pm.expect(pm.response.json().data.length).to.equal(59);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/chapters/LUK.12/verses",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"chapters",
+						"LUK.12",
+						"verses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBookChapterVerseById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapter Verse id = \" + pm.response.json().data.id, function () {\r",
+							"    pm.expect(pm.response.json().data.id).to.equal(\"LUK.12.5\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapter next = \" + pm.response.json().data.next.id, function () {\r",
+							"    pm.expect(pm.response.json().data.next.id).to.equal(\"LUK.12.6\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Chapter next = \" + pm.response.json().data.previous.id, function () {\r",
+							"    pm.expect(pm.response.json().data.previous.id).to.equal(\"LUK.12.4\");\r",
+							"});\r",
+							"pm.test(\"Bible verses has word power\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"power\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/verses/LUK.12.5",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"verses",
+						"LUK.12.5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBibleBookPassages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"pm.test(\"Bible Book Passage id = \" + pm.response.json().data.id, function () {\r",
+							"    pm.expect(pm.response.json().data.id).to.equal(\"MAT.1.12-MAT.1.20\");\r",
+							"});\r",
+							"pm.test(\"Bible Book Passage Verse count = \" + pm.response.json().data.verseCount, function () {\r",
+							"    pm.expect(pm.response.json().data.verseCount).to.equal(9);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apikey}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/bibles/7142879509583d59-03/passages/MAT.1.12-MAT.1.20",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"bibles",
+						"7142879509583d59-03",
+						"passages",
+						"MAT.1.12-MAT.1.20"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apikey",
+			"value": "821abe5b3c667abb57fd5acf71bc8280",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://api.scripture.api.bible",
+			"type": "string"
+		}
+	]
+}
