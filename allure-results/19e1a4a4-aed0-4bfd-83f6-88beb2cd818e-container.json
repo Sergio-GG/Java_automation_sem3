@@ -1,0 +1,1 @@
+{"uuid":"19e1a4a4-aed0-4bfd-83f6-88beb2cd818e","name":"GetBibleTest","children":["d66fba91-8c09-4593-b30f-5e20ebd1d5af"],"befores":[{"name":"initTest","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1716457875730,"stop":1716457875730}],"afters":[],"start":1716457875729,"stop":1716457877696}

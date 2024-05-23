@@ -1,15 +1,24 @@
+import io.qameta.allure.*;
 import org.example.bibles.Data;
 import org.example.books.Book;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.Objects;
 
 import static io.restassured.RestAssured.given;
-
+@Epic("Тестирование функционала https://api.scripture.api.bible")
+@Feature("Тестирование Book API")
 public class GetBooksTest extends BibleApiAbstractTest{
     @Test
+    @DisplayName("Тест получения списка томов")
+    @Description("Получение списка томов пользователем")
+    @Link("https://api.scripture.api.bible")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Поиск томов")
+    @Owner("Luke Skywalker")
     public void getBooks() {
         List<Book> bookList = given()
                 .header("api-key", getApiKey())

@@ -1,13 +1,22 @@
+import io.qameta.allure.*;
 import org.example.chapters.ChapterAnswer;
 import org.example.chapters.Next;
 import org.example.chapters.Previous;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-
+@Epic("Тестирование функционала https://api.scripture.api.bible")
+@Feature("Тестирование Chapter API")
 public class GetChapterByIdTest extends BibleApiAbstractTest{
     @Test
+    @DisplayName("Тест поиска главы по ID")
+    @Description("Поиск главы по ID пользователем")
+    @Link("https://api.scripture.api.bible")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Поиск главы по ID")
+    @Owner("Luke Skywalker")
     public void getChapterById() {
         ChapterAnswer chapter = given()
                 .header("api-key", getApiKey())

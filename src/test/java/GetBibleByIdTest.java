@@ -1,11 +1,20 @@
+import io.qameta.allure.*;
 import org.example.bibles.id.Data;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-
+@Epic("Тестирование функционала https://api.scripture.api.bible")
+@Feature("Тестирование Bible API")
 public class GetBibleByIdTest extends BibleApiAbstractTest{
     @Test
+    @DisplayName("Получение издания")
+    @Description("Поиск издания пользователем")
+    @Link("https://api.scripture.api.bible")
+    @Severity(SeverityLevel.BLOCKER)
+    @Story("Поиск изданий по ID")
+    @Owner("Luke Skywalker")
     public void getBiblesById() {
         Data data = given()
                 .header("api-key", getApiKey())
