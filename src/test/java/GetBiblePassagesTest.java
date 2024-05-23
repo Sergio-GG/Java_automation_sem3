@@ -1,11 +1,20 @@
+import io.qameta.allure.*;
 import org.example.passages.Passage;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-
+@Epic("Тестирование функционала https://api.scripture.api.bible")
+@Feature("Тестирование Passage API")
 public class GetBiblePassagesTest extends BibleApiAbstractTest{
     @Test
+    @DisplayName("Получение отрывка")
+    @Description("Поиск отрывка пользователем")
+    @Link("https://api.scripture.api.bible")
+    @Severity(SeverityLevel.BLOCKER)
+    @Story("Поиск отрывка")
+    @Owner("Luke Skywalker")
     public void getPassages() {
         Passage passage = given()
                 .header("api-key", getApiKey())

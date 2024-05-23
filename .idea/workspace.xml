@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67491c4f-eaa9-40f3-8db1-843ee28c33d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="67491c4f-eaa9-40f3-8db1-843ee28c33d0" name="Changes" comment="Seminar_6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BibleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BibleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetAudioBibleByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetAudioBibleByIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetAudioBiblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetAudioBiblesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBibleBookChapterVerseByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBibleBookChapterVerseByIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBibleBookChapterVersesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBibleBookChapterVersesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBibleBookChaptersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBibleBookChaptersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBibleByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBibleByIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBiblePassagesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBiblePassagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBibleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBibleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBookByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBookByIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetBooksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetBooksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetChapterByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetChapterByIdTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="seminar_6" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,28 +59,23 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Coding/Java_tasks/Java_automation_sem2&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Coding\Java_tasks\Java_automation_sem3\src\test\resources" />
+      <recent name="D:\Coding\Java_tasks\Java_automation_sem3\src\main\resources" />
       <recent name="D:\Coding\Java_tasks\Java_automation_sem3\src\test\resourses" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Java_automation_sem3">
-    <configuration name="All in Java_automation_sem3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_automation_sem3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GetBibleTest.getBibles">
     <configuration name="GetBibleBookChapterVerseByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_automation_sem3" />
+      <module name="Java_automation_sem3 (REST testing)" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GetBibleBookChapterVerseByIdTest" />
       <option name="TEST_OBJECT" value="class" />
@@ -80,7 +84,7 @@
       </method>
     </configuration>
     <configuration name="GetBibleBookChapterVerseByIdTest.getVerseById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_automation_sem3" />
+      <module name="Java_automation_sem3 (REST testing)" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GetBibleBookChapterVerseByIdTest" />
       <option name="METHOD_NAME" value="getVerseById" />
@@ -89,18 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetBibleBookChapterVersesTest.getVerses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_automation_sem3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GetBibleBookChapterVersesTest" />
-      <option name="METHOD_NAME" value="getVerses" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GetBiblePassagesTest.getPassages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_automation_sem3" />
+      <module name="Java_automation_sem3 (REST testing)" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GetBiblePassagesTest" />
       <option name="METHOD_NAME" value="getPassages" />
@@ -109,13 +103,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GetBibleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_automation_sem3 (REST testing)" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetBibleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetBibleTest.getBibles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_automation_sem3 (REST testing)" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetBibleTest" />
+      <option name="METHOD_NAME" value="getBibles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Java_automation_sem3" />
+        <item itemvalue="JUnit.GetBibleTest.getBibles" />
+        <item itemvalue="JUnit.GetBibleTest" />
         <item itemvalue="JUnit.GetBiblePassagesTest.getPassages" />
-        <item itemvalue="JUnit.GetBibleBookChapterVerseByIdTest" />
         <item itemvalue="JUnit.GetBibleBookChapterVerseByIdTest.getVerseById" />
-        <item itemvalue="JUnit.GetBibleBookChapterVersesTest.getVerses" />
+        <item itemvalue="JUnit.GetBibleBookChapterVerseByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -129,5 +142,9 @@
       <updated>1714315063510</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Seminar_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seminar_6" />
   </component>
 </project>
